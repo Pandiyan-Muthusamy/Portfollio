@@ -22,7 +22,7 @@ export default function Sidebar({ setCurrentPage, currentPage }) {
   return (
     <>
       <div
-        className={`fixed left-0 h-full w-64 bg-red text-black transform z-50 ${
+        className={`fixed left-0 h-full w-64 bg-red-500 text-black transform z-50 ${
           isOpen ? "translate-x-0" : "-translate-x-64"
         } md:translate-x-0 transition-transform duration-300 ease-in-out `}
       >

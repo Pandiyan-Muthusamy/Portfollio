@@ -11,7 +11,6 @@ import {
 
 export default function Sidebar({ setCurrentPage, currentPage }) {
   const [isOpen, setIsOpen] = useState(false);
-
   const navItems = [
     { name: "Home", key: "home", icon: <FaHome size={20} /> },
     { name: "About", key: "about", icon: <FaInfoCircle size={20} /> },

@@ -58,17 +58,6 @@ export default function Resume() {
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
       >
-        <motion.a
-          href="https://www.instagram.com/agent_no_46"
-          target="_blank"
-          rel="noopener noreferrer"
-          initial={{ scale: 0.9, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="absolute top-1 right-2 px-7 py-4 text-black rounded-[10rem] hover:bg-white hover:text-gray-500 transition flex items-center"
-        >
-          <FaDownload className="" size={15} />
-        </motion.a>
         <motion.div
           className="text-center pb-6 border-b border-gray-300"
           initial={{ y: -20, opacity: 0 }}
@@ -184,6 +173,23 @@ export default function Resume() {
               ))}
             </ul>
           </section>
+        </motion.div>
+        <motion.div
+          className="mt-6 flex justify-center"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1 }}
+        >
+          <a
+            href="/Pandiyan_Muthusamy.pdf"
+            download="Pandiyan_Muthusamy.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full sm:w-auto px-6 py-3 bg-[#d2f2c9] text-black text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-md hover:bg-gray-200 transition flex items-center justify-center space-x-2"
+          >
+            <FaDownload className="text-md sm:text-lg" />
+            <span>Download Resume</span>
+          </a>
         </motion.div>
       </motion.div>
     </div>

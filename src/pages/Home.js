@@ -1,11 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import {
-  FaCheckCircle,
-  FaGithub,
-  FaLinkedin,
-  FaDownload,
-} from "react-icons/fa";
+import { FaCheckCircle, FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home({ setCurrentPage }) {
   const portfolioData = {
@@ -85,9 +80,8 @@ export default function Home({ setCurrentPage }) {
         transition={{ duration: 0.8, delay: 1.1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
-        className="absolute top-0 right-0 md:top-6 md:right-8 px-6 py-2 bg-white text-black text-sm font-normal rounded shadow-sm hover:bg-gray-50 hover:text-gray-600 transition flex items-center"
+        className="mt-6 px-6 py-2 bg-[#d2f2c9] text-black text-sm font-semibold rounded shadow-lg hover:bg-gray-50 hover:text-green-600 transition flex items-center"
       >
-        <FaDownload className="mr-2" size={20} />
         Resume
       </motion.button>
     </motion.div>

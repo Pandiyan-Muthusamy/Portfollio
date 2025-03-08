@@ -46,15 +46,13 @@ export default function Sidebar({ setCurrentPage, currentPage }) {
               }}
               className={`block w-full text-left px-6 py-3 mt-2 rounded-lg transition ${
                 currentPage === item.key
-                  ? "bg-black text-white font-semibold shadow-lg" 
+                  ? "bg-black text-white font-semibold shadow-lg"
                   : "hover:bg-blue-100"
               }`}
             >
               <div className="flex items-center">
-                {item.icon} 
-                <span className="ml-4 text-xs sm:text-xs">
-                  {item.name}
-                </span>
+                {item.icon}
+                <span className="ml-4 text-xs sm:text-xs">{item.name}</span>
               </div>
             </button>
           ))}

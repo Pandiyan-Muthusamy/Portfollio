@@ -181,10 +181,8 @@ export default function Resume() {
           transition={{ duration: 1 }}
         >
           <a
-            href="/Pandiyan_Muthusamy.pdf"
-            download="Pandiyan_Muthusamy.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/Pandiyan Muthusamy.pdf"
+            download="Pandiyan Muthusamy.pdf"
             className="w-full sm:w-auto px-6 py-3 bg-[#d2f2c9] text-black text-sm sm:text-base md:text-lg font-semibold rounded-lg shadow-md hover:bg-gray-200 transition flex items-center justify-center space-x-2"
           >
             <FaDownload className="text-md sm:text-lg" />

@@ -7,7 +7,7 @@ import {
   FaEnvelope,
   FaBars,
   FaTimes,
-} from "react-icons/fa"; // New icons from react-icons/fa
+} from "react-icons/fa";
 
 export default function Sidebar({ setCurrentPage, currentPage }) {
   const [isOpen, setIsOpen] = useState(false);

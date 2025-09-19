@@ -264,7 +264,6 @@ export default function About() {
                   </p>
                 )}
 
-                {/* Points / Course */}
                 {(step.points || step.course) && (
                   <>
                     <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
@@ -286,7 +285,6 @@ export default function About() {
                   </>
                 )}
 
-                {/* Roles & Responsibilities */}
                 {step.rolesAndResponsibilities && (
                   <>
                     <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
@@ -302,7 +300,6 @@ export default function About() {
                   </>
                 )}
 
-                {/* Projects */}
                 {step.projects && (
                   <>
                     <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">

@@ -25,7 +25,6 @@ export default function About() {
       year: "2017 - 2019",
       icon: <FaBook />,
       color: "from-purple-500 to-purple-700",
-      percentage: "Percentage : 91.27%",
       title: "Knowledge & Skills",
       points: {
         line1:
@@ -264,36 +263,30 @@ export default function About() {
                     {step.percentage}
                   </p>
                 )}
-                {step.title && (
-                  <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
-                    {step.title}
-                  </p>
-                )}
 
-                {step.points && (
-                  <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
-                    {Object.values(step.points).map((task, index) => (
-                      <li key={index}>{task}</li>
-                    ))}
-                  </ul>
-                )}
-
-                {step.course && (
+                {/* Points / Course */}
+                {(step.points || step.course) && (
                   <>
                     <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
-                      Knowledge & Skills
+                      {step.title || "Knowledge & Skills"}
                     </p>
                     <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
-                      {step.course.map((item, index) => (
-                        <li key={index}>
-                          <strong>{item.heading}: </strong>
-                          {item.body}
-                        </li>
-                      ))}
+                      {step.points &&
+                        Object.values(step.points).map((task, idx) => (
+                          <li key={idx}>{task}</li>
+                        ))}
+                      {step.course &&
+                        step.course.map((item, idx) => (
+                          <li key={idx}>
+                            <strong>{item.heading}: </strong>
+                            {item.body}
+                          </li>
+                        ))}
                     </ul>
                   </>
                 )}
 
+                {/* Roles & Responsibilities */}
                 {step.rolesAndResponsibilities && (
                   <>
                     <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
@@ -301,22 +294,23 @@ export default function About() {
                     </p>
                     <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
                       {Object.values(step.rolesAndResponsibilities).map(
-                        (task, index) => (
-                          <li key={index}>{task}</li>
+                        (task, idx) => (
+                          <li key={idx}>{task}</li>
                         )
                       )}
                     </ul>
                   </>
                 )}
 
+                {/* Projects */}
                 {step.projects && (
                   <>
                     <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
                       Projects
                     </p>
                     <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
-                      {step.projects.map((project, index) => (
-                        <li key={index}>
+                      {step.projects.map((project, idx) => (
+                        <li key={idx}>
                           <strong>{project.name}: </strong>
                           {project.description}
                         </li>

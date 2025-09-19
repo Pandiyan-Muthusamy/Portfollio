@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaGraduationCap, FaBriefcase, FaBook } from "react-icons/fa";
 
@@ -39,26 +38,6 @@ export default function About() {
       },
     },
     {
-      stage: "Work",
-      institution: "SnowWash (Tele Marketing Executive)",
-      year: "2019 - 2020",
-      icon: <FaBriefcase />,
-      color: "from-red-500 to-red-700",
-      title: "Responsibilities",
-      points: {
-        line1: "Make outbound calls to potential customers to generate sales.",
-        line2: "Handle objections and convince prospects effectively.",
-        line3: "Answer customer inquiries about products.",
-        line4: "Build and maintain strong customer relationships.",
-        line5:
-          "Follow up with leads and previous customers to encourage repeat business.",
-        line6:
-          "Maintain accurate records of calls, sales, and customer details.",
-        line7: "Resolve customer complaints.",
-        line8: "Research market trends and customer needs.",
-      },
-    },
-    {
       stage: "B.Tech in Information Technology",
       institution: "Govt College of Technology",
       year: "2020 - 2023",
@@ -77,8 +56,8 @@ export default function About() {
     },
     {
       stage: "Advanced Course (MERN Stack)",
-      institution: "Besant Technology",
-      year: "2024 - 2025",
+      institution: "Besant Technologies, Porur",
+      year: "2023 - 2024",
       icon: <FaBook />,
       color: "from-yellow-500 to-yellow-700",
       title: "Knowledge & Skills",
@@ -106,6 +85,115 @@ export default function About() {
         {
           heading: "Full-Stack Projects",
           body: "Building real-world applications using MERN stack.",
+        },
+      ],
+    },
+    {
+      stage: "Front-end Developer Internship",
+      institution: "Besant Technologies, OMR",
+      year: "May 2024 - August 2024",
+      icon: <FaBriefcase />,
+      color: "from-yellow-500 to-yellow-700",
+      title: "Internship Experience",
+      course: [
+        {
+          heading: "JavaScript",
+          body: "Advanced JavaScript concepts including ES6+ features and async programming.",
+        },
+        {
+          heading: "React",
+          body: "React skills and component-based development.",
+        },
+        {
+          heading: "Axios",
+          body: "Handling API requests and integrating backend services with frontend.",
+        },
+        {
+          heading: "React Router",
+          body: "Client-side routing for building single-page applications.",
+        },
+        {
+          heading: "REST APIs",
+          body: "Designing and consuming RESTful APIs for scalable applications.",
+        },
+        {
+          heading: "Tailwind CSS",
+          body: "Utility-first CSS framework for designing modern UIs.",
+        },
+      ],
+      rolesAndResponsibilities: {
+        line1:
+          "Developed responsive UI components using React and Tailwind CSS.",
+        line2: "Integrated REST APIs with Axios for dynamic data rendering.",
+        line3: "Implemented client-side routing with React Router.",
+        line4:
+          "Optimized frontend performance and improved reusability with component-based architecture.",
+        line5:
+          "Collaborated with the team to debug, test, and deploy web applications.",
+        line6:
+          "Gained hands-on experience with modern JavaScript (ES6+) and async programming.",
+      },
+    },
+    {
+      stage: "Front-end Developer",
+      institution: "Besant Technologies, OMR",
+      year: "September 2024 - August 2025",
+      icon: <FaBriefcase />,
+      color: "from-yellow-500 to-yellow-700",
+      title: "Full-Time Experience",
+      course: [
+        {
+          heading: "JavaScript",
+          body: "Advanced JavaScript concepts including ES6+ features and async programming.",
+        },
+        {
+          heading: "React",
+          body: "React skills and component-based development.",
+        },
+        {
+          heading: "Axios",
+          body: "Handling API requests and integrating backend services with frontend.",
+        },
+        {
+          heading: "React Router",
+          body: "Client-side routing for building single-page applications.",
+        },
+        {
+          heading: "REST APIs",
+          body: "Designing and consuming RESTful APIs for scalable applications.",
+        },
+        {
+          heading: "Tailwind CSS",
+          body: "Utility-first CSS framework for designing modern UIs.",
+        },
+      ],
+      rolesAndResponsibilities: {
+        line1:
+          "Developed responsive UI components using React and Tailwind CSS.",
+        line2: "Integrated REST APIs with Axios for dynamic data rendering.",
+        line3: "Implemented client-side routing with React Router.",
+        line4:
+          "Optimized frontend performance and improved reusability with component-based architecture.",
+        line5:
+          "Collaborated with the team to debug, test, and deploy web applications.",
+        line6:
+          "Gained hands-on experience with modern JavaScript (ES6+) and async programming.",
+      },
+      projects: [
+        {
+          name: "Admission & Attendance Tracking System",
+          description:
+            "Developed a web application to manage student admissions and track daily attendance with real-time reporting.",
+        },
+        {
+          name: "Placement Training & Tracking",
+          description:
+            "Built a platform to organize placement training sessions, monitor student progress, and generate reports.",
+        },
+        {
+          name: "Real-Time Chat & Virtual Support",
+          description:
+            "Implemented a chat application with real-time messaging and virtual support features using WebSockets.",
         },
       ],
     },
@@ -154,6 +242,7 @@ export default function About() {
               >
                 {step.icon}
               </motion.div>
+
               <motion.div
                 className="relative w-full max-w-xs sm:max-w-sm md:max-w-md bg-white/20 backdrop-blur-lg p-4 sm:p-5 rounded-2xl border border-gray-300 shadow-lg"
                 whileHover={{ scale: 1.05 }}
@@ -180,6 +269,7 @@ export default function About() {
                     {step.title}
                   </p>
                 )}
+
                 {step.points && (
                   <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
                     {Object.values(step.points).map((task, index) => (
@@ -187,15 +277,52 @@ export default function About() {
                     ))}
                   </ul>
                 )}
+
                 {step.course && (
-                  <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
-                    {step.course.map((item, index) => (
-                      <li key={index}>
-                        <strong>{item.heading}: </strong>
-                        {item.body}
-                      </li>
-                    ))}
-                  </ul>
+                  <>
+                    <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
+                      Knowledge & Skills
+                    </p>
+                    <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
+                      {step.course.map((item, index) => (
+                        <li key={index}>
+                          <strong>{item.heading}: </strong>
+                          {item.body}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                )}
+
+                {step.rolesAndResponsibilities && (
+                  <>
+                    <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
+                      Roles & Responsibilities
+                    </p>
+                    <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
+                      {Object.values(step.rolesAndResponsibilities).map(
+                        (task, index) => (
+                          <li key={index}>{task}</li>
+                        )
+                      )}
+                    </ul>
+                  </>
+                )}
+
+                {step.projects && (
+                  <>
+                    <p className="text-left text-xs sm:text-xs md:text-sm text-gray-800 font-bold mt-2">
+                      Projects
+                    </p>
+                    <ul className="text-left text-xs sm:text-xs md:text-sm text-gray-600 list-disc list-inside mt-2 mr-5">
+                      {step.projects.map((project, index) => (
+                        <li key={index}>
+                          <strong>{project.name}: </strong>
+                          {project.description}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
                 )}
               </motion.div>
             </motion.div>

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { FaCheckCircle, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -11,7 +10,7 @@ export default function Home({ setCurrentPage }) {
         <span className="font-bold font-sriracha">MERN</span> Stack Developer{" "}
       </span>
     ),
-    bio: "I create scalable web applications and love working with modern technologies.",
+    bio: "I create scalable web applications, have 1+ years of hands-on experience in Frontend Development, and love working with modern technologies.",
     socialLinks: {
       github: "https://github.com/Pandiyan-Muthusamy",
       linkedin:
@@ -82,7 +81,7 @@ export default function Home({ setCurrentPage }) {
         whileTap={{ scale: 0.95 }}
         className="mt-6 px-6 py-2 bg-[#d2f2c9] text-black text-sm font-semibold rounded shadow-lg hover:bg-gray-50 hover:text-green-600 transition flex items-center"
       >
-        Resume
+        Hire Me
       </motion.button>
     </motion.div>
   );

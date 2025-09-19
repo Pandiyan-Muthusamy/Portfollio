@@ -1,22 +1,95 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 const projects = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio showcasing my work and skills.",
-    tech: ["React", "Tailwind CSS", "Framer Motion"],
+    tech: ["React", "Tailwind CSS", "Framer Motion", "Router"],
   },
   {
     title: "E-commerce Platform",
     description:
       "A fully functional e-commerce website with cart and payment integration.",
-    tech: ["Next.js", "MongoDB", "Stripe API"],
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Router",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+    ],
   },
   {
     title: "Guess the Number Game",
     description: "A fun number guessing game built with React.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
+  },
+  {
+    title: "Admission & Attendance Tracking System",
+    description:
+      "Developed a web application to manage student admissions and track daily attendance with real-time reporting.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+    ],
+  },
+  {
+    title: "Placement Training & Tracking",
+    description:
+      "Built a platform to organize placement training sessions, monitor student progress, and generate reports.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+    ],
+  },
+  {
+    title: "Real-Time Chat & Virtual Support",
+    description:
+      "Implemented a chat application with real-time messaging and virtual support features using WebSockets.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "WebSockets",
+    ],
+  },
+  {
+    title: "Transaction Application",
+    description:
+      "Designed and developed a transaction management app to record, track, and analyze financial transactions securely.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+    ],
+  },
+  {
+    title: "Contact Manager Application",
+    description:
+      "Created a contact management system with CRUD operations, search, and filter functionalities.",
+    tech: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "REST APIs",
+    ],
   },
 ];
 
@@ -60,7 +133,7 @@ export default function Projects() {
               {project.tech.map((tech, index) => (
                 <motion.span
                   key={index}
-                  className="bg-blue-50 text-black px-3 py-1 rounded-full text-xs sm:text-xs md:text-sm"
+                  className="bg-blue-100 text-black px-3 py-1 rounded-full text-xs sm:text-xs md:text-sm"
                   whileHover={{ scale: 1.2 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
